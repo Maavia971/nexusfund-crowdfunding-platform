@@ -1,0 +1,374 @@
+ * {  
+      margin: 0;  
+      padding: 0;  
+      box-sizing: border-box;  
+    }  
+  
+    body {  
+      font-family: 'Inter', sans-serif;  
+      background-color: #fefcf8;  
+      color: #1e1e2a;  
+      line-height: 1.5;  
+      scroll-behavior: smooth;  
+    }  
+  
+    /* graceful container pattern */  
+    .container {  
+      max-width: 1280px;  
+      margin: 0 auto;  
+      padding: 0 2rem;  
+    }  
+  
+    /* navbar styling — refined, mid-level modern */  
+    .navbar {  
+      display: flex;  
+      justify-content: space-between;  
+      align-items: center;  
+      padding: 1.25rem 2rem;  
+      background: rgba(255, 253, 250, 0.96);  
+      backdrop-filter: blur(2px);  
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);  
+      position: sticky;  
+      top: 0;  
+      z-index: 100;  
+      flex-wrap: wrap;  
+      gap: 1rem;  
+    }  
+  
+    .logo {  
+      font-size: 1.7rem;  
+      font-weight: 700;  
+      letter-spacing: -0.02em;  
+      background: linear-gradient(135deg, #2b3b3a, #1f6e6b);  
+      background-clip: text;  
+      -webkit-background-clip: text;  
+      color: transparent;  
+    }  
+  
+    .nav-links {  
+      display: flex;  
+      gap: 2rem;  
+      list-style: none;  
+    }  
+  
+    .nav-links a {  
+      text-decoration: none;  
+      font-weight: 500;  
+      color: #2d3e3c;  
+      transition: color 0.2s ease;  
+      font-size: 1rem;  
+    }  
+  
+    .nav-links a:hover {  
+      color: #1f8a7c;  
+    }  
+  
+    .btn-login {  
+      background: transparent;  
+      border: 1.5px solid #cbd5e1;  
+      padding: 0.5rem 1.4rem;  
+      border-radius: 40px;  
+      font-weight: 600;  
+      font-size: 0.9rem;  
+      color: #1e2e2c;  
+      cursor: pointer;  
+      transition: all 0.2s;  
+      background-color: white;  
+    }  
+  
+    .btn-login:hover {  
+      border-color: #1f8a7c;  
+      color: #1f8a7c;  
+      background: #f0f9f7;  
+    }  
+  
+    /* Hero section — elegant & airy */  
+    .hero {  
+      background: linear-gradient(105deg, #f9f7f2 0%, #eef3f0 100%);  
+      padding: 4rem 2rem 5rem 2rem;  
+      text-align: center;  
+      border-bottom: 1px solid #e2e8f0;  
+    }  
+  
+    .hero-content h2 {  
+      font-size: 3rem;  
+      font-weight: 700;  
+      letter-spacing: -0.02em;  
+      background: linear-gradient(to right, #1f4e48, #2d8f82);  
+      background-clip: text;  
+      -webkit-background-clip: text;  
+      color: transparent;  
+      margin-bottom: 1rem;  
+    }  
+  
+    .hero-content p {  
+      font-size: 1.25rem;  
+      color: #2c4b46;  
+      max-width: 580px;  
+      margin: 0 auto 2rem auto;  
+    }  
+  
+    .btn-primary {  
+      display: inline-block;  
+      background: #1f6e6b;  
+      color: white;  
+      font-weight: 600;  
+      padding: 0.85rem 2rem;  
+      border-radius: 40px;  
+      text-decoration: none;  
+      transition: all 0.25s ease;  
+      border: none;  
+      cursor: pointer;  
+      font-size: 1rem;  
+      box-shadow: 0 8px 20px rgba(27, 94, 87, 0.2);  
+    }  
+  
+    .btn-primary:hover {  
+      background: #135b57;  
+      transform: translateY(-2px);  
+      box-shadow: 0 12px 24px rgba(27, 94, 87, 0.25);  
+    }  
+  
+    .btn-secondary {  
+      background: transparent;  
+      border: 1.5px solid #cbd5e1;  
+      padding: 0.65rem 1.5rem;  
+      border-radius: 40px;  
+      font-weight: 600;  
+      font-size: 0.9rem;  
+      color: #1f6e6b;  
+      cursor: pointer;  
+      transition: all 0.2s;  
+      width: 100%;  
+    }  
+  
+    .btn-secondary:hover {  
+      background: #eef3f0;  
+      border-color: #1f6e6b;  
+      color: #13544f;  
+    }  
+  
+    /* projects section */  
+    .projects {  
+      padding: 5rem 2rem;  
+      background: white;  
+    }  
+  
+    .projects h2, .create-project h2, .updates h2 {  
+      font-size: 2rem;  
+      font-weight: 600;  
+      margin-bottom: 2rem;  
+      letter-spacing: -0.01em;  
+      color: #1e2e2c;  
+      position: relative;  
+      display: inline-block;  
+    }  
+  
+    .projects h2:after, .create-project h2:after, .updates h2:after {  
+      content: '';  
+      position: absolute;  
+      bottom: -10px;  
+      left: 0;  
+      width: 60%;  
+      height: 3px;  
+      background: linear-gradient(90deg, #1f8a7c, #cbd5e1);  
+      border-radius: 4px;  
+    }  
+  
+    .project-grid {  
+      display: grid;  
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  
+      gap: 2rem;  
+      margin-top: 1rem;  
+    }  
+  
+    .project-card {  
+      background: #ffffff;  
+      border-radius: 28px;  
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);  
+      overflow: hidden;  
+      transition: transform 0.25s ease, box-shadow 0.3s;  
+      border: 1px solid #f0ebe2;  
+    }  
+  
+    .project-card:hover {  
+      transform: translateY(-6px);  
+      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);  
+    }  
+  
+    .project-card img {  
+      width: 100%;  
+      height: 190px;  
+      object-fit: cover;  
+      background: #d9e2dc;  
+    }  
+  
+    /* placeholder images gracefully (inline svg fallback if images missing) */  
+    .project-card img[src*="project1.jpg"],   
+    .project-card img[src*="project2.jpg"] {  
+      background: linear-gradient(135deg, #cbdcd6, #b7cfc6);  
+    }  
+  
+    .card-content {  
+      padding: 1.5rem;  
+    }  
+  
+    .card-content h3 {  
+      font-size: 1.45rem;  
+      margin-bottom: 0.5rem;  
+      font-weight: 600;  
+    }  
+  
+    .card-content p {  
+      color: #3f5a55;  
+      margin-bottom: 1rem;  
+    }  
+  
+    .progress-bar {  
+      background-color: #e4e9e5;  
+      border-radius: 30px;  
+      height: 8px;  
+      width: 100%;  
+      margin: 1rem 0 0.5rem 0;  
+      overflow: hidden;  
+    }  
+  
+    .progress {  
+      background: #2f8f82;  
+      width: 0%;  
+      height: 8px;  
+      border-radius: 30px;  
+    }  
+  
+    /* create project form */  
+    .create-project {  
+      background: #f9faf8;  
+      padding: 5rem 2rem;  
+      border-top: 1px solid #e9ede8;  
+      border-bottom: 1px solid #e9ede8;  
+    }  
+  
+    form {  
+      max-width: 620px;  
+      margin: 0 auto;  
+      background: white;  
+      padding: 2rem 2rem 2.2rem;  
+      border-radius: 32px;  
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.03);  
+      border: 1px solid #eef2ea;  
+    }  
+  
+    label {  
+      font-weight: 600;  
+      display: block;  
+      margin-top: 1rem;  
+      margin-bottom: 0.4rem;  
+      color: #2a4641;  
+    }  
+  
+    input, textarea {  
+      width: 100%;  
+      padding: 0.85rem 1rem;  
+      border-radius: 24px;  
+      border: 1px solid #e2e6e0;  
+      font-family: 'Inter', sans-serif;  
+      font-size: 0.95rem;  
+      transition: 0.2s;  
+      background: #fffdfb;  
+    }  
+  
+    input:focus, textarea:focus {  
+      outline: none;  
+      border-color: #1f8a7c;  
+      box-shadow: 0 0 0 3px rgba(31, 138, 124, 0.1);  
+    }  
+  
+    textarea {  
+      min-height: 110px;  
+      resize: vertical;  
+    }  
+  
+    form button {  
+      margin-top: 2rem;  
+      width: 100%;  
+      background: #1f6e6b;  
+      font-weight: 600;  
+      padding: 0.9rem;  
+      font-size: 1rem;  
+    }  
+  
+    /* updates section */  
+    .updates {  
+      padding: 5rem 2rem;  
+      background: #ffffff;  
+    }  
+  
+    .updates h2 {  
+      margin-bottom: 2rem;  
+    }  
+  
+    .update-card {  
+      background: #fefaf5;  
+      border-left: 5px solid #2f8f82;  
+      padding: 1.5rem;  
+      border-radius: 20px;  
+      margin-bottom: 1.5rem;  
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);  
+      transition: 0.2s;  
+    }  
+  
+    .update-card h3 {  
+      font-size: 1.25rem;  
+      font-weight: 600;  
+      margin-bottom: 0.5rem;  
+      color: #1e4a44;  
+    }  
+  
+    .update-card p {  
+      color: #4b6b64;  
+    }  
+  
+    footer {  
+      text-align: center;  
+      padding: 2rem;  
+      background: #f2f4ef;  
+      color: #58746e;  
+      font-size: 0.85rem;  
+      border-top: 1px solid #e2e0d8;  
+    }  
+  
+    /* status message */  
+    .toast-message {  
+      position: fixed;  
+      bottom: 24px;  
+      right: 24px;  
+      background: #1f6e6b;  
+      color: white;  
+      padding: 0.8rem 1.8rem;  
+      border-radius: 48px;  
+      font-weight: 500;  
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);  
+      z-index: 1000;  
+      opacity: 0;  
+      transform: translateY(20px);  
+      transition: opacity 0.2s, transform 0.2s;  
+      pointer-events: none;  
+    }  
+  
+    .toast-message.show {  
+      opacity: 1;  
+      transform: translateY(0);  
+    }  
+  
+    @media (max-width: 780px) {  
+      .navbar {  
+        flex-direction: column;  
+        text-align: center;  
+      }  
+      .hero-content h2 {  
+        font-size: 2.2rem;  
+      }  
+      .project-grid {  
+        grid-template-columns: 1fr;  
+      }  
+    }

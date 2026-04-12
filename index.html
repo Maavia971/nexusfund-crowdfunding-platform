@@ -1,0 +1,149 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <meta name="description" content="NexusFund – A modern crowdfunding platform to launch creative projects and raise funds with elegance." />  
+  <title>NexusFund | Graceful Crowdfunding</title>  
+  
+  <!-- Google Fonts + subtle reset styling -->  
+  <link rel="preconnect" href="https://fonts.googleapis.com">  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">  
+  
+  <!-- Font Awesome 6 (free icons) -->  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+  
+  <link rel="stylesheet" href="style.css"> 
+</head>  
+<body>  
+  
+  <!-- ================= NAVBAR ================= -->  
+  <header>  
+    <nav class="navbar" aria-label="Main Navigation">  
+      <div class="logo"><i class="fas fa-chart-line" style="margin-right: 6px; color:#1f8a7c;"></i> NexusFund</div>  
+      <ul class="nav-links">  
+        <li><a href="#projects">Projects</a></li>  
+        <li><a href="#create">Start Project</a></li>  
+        <li><a href="#updates">Updates</a></li>  
+      </ul>  
+      <button class="btn-login" id="loginMockBtn" aria-label="Login button"><i class="fas fa-user-circle"></i> Sign In</button>  
+    </nav>  
+  
+    <!-- ================= HERO ================= -->  
+    <section class="hero" role="banner">  
+      <div class="hero-content">  
+        <h2>Fund Ideas That Matter</h2>  
+        <p>Support innovative projects and bring ideas to life with transparency & elegance.</p>  
+        <a href="#create" class="btn-primary"><i class="fas fa-rocket" style="margin-right: 8px;"></i>Start a Project</a>  
+      </div>  
+    </section>  
+  </header>  
+  
+  <!-- ================= MAIN ================= -->  
+  <main>  
+  
+    <!-- ===== FEATURED PROJECTS ===== -->  
+    <section id="projects" class="projects" aria-labelledby="projects-heading">  
+      <div class="container" style="max-width:1280px; margin:0 auto;">  
+        <h2 id="projects-heading"><i class="fas fa-star" style="margin-right: 12px; color:#1f8a7c;"></i> Featured Projects</h2>  
+        <div class="project-grid">  
+          <!-- CARD 1 -->  
+          <article class="project-card">  
+            <img src="images/project1.jpg" alt="Smart farming system with AI sensors" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e2efe9/2d5a53?text=Smart+Farming';">  
+            <div class="card-content">  
+              <h3>🌾 Smart Farming System</h3>  
+              <p>AI-based system to improve crop yield, reduce water waste, and empower local farmers.</p>  
+              <div class="progress-bar" aria-label="Funding progress">  
+                <div class="progress" style="width: 60%"></div>  
+              </div>  
+              <p style="font-weight: 500; margin-top: 8px;"><strong>$6,000</strong> raised of $10,000</p>  
+              <button class="btn-secondary fund-btn" data-project="Smart Farming System" data-goal="10000" data-raised="6000">Fund Project <i class="fas fa-arrow-right"></i></button>  
+            </div>  
+          </article>  
+  
+          <!-- CARD 2 -->  
+          <article class="project-card">  
+            <img src="images/project2.jpg" alt="Eco-friendly products collection" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e2efe9/2d5a53?text=Eco+Products';">  
+            <div class="card-content">  
+              <h3>♻️ Eco Products</h3>  
+              <p>Reusable eco-friendly daily products – bamboo cutlery, beeswax wraps, and zero waste kits.</p>  
+              <div class="progress-bar">  
+                <div class="progress" style="width: 40%"></div>  
+              </div>  
+              <p style="font-weight: 500; margin-top: 8px;"><strong>$2,000</strong> raised of $5,000</p>  
+              <button class="btn-secondary fund-btn" data-project="Eco Products" data-goal="5000" data-raised="2000">Fund Project <i class="fas fa-leaf"></i></button>  
+            </div>  
+          </article>  
+  
+          <!-- BONUS GRACEFUL CARD 3 (mid-level extra polish) -->  
+          <article class="project-card">  
+            <img src="images/project3.jpg" alt="Community learning hub" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/ddece6/2f6b63?text=Community+HUB';">  
+            <div class="card-content">  
+              <h3>📚 Community Learning Hub</h3>  
+              <p>Digital library & after-school programs for underserved youth.</p>  
+              <div class="progress-bar">  
+                <div class="progress" style="width: 25%"></div>  
+              </div>  
+              <p><strong>$2,500</strong> raised of $10,000</p>  
+              <button class="btn-secondary fund-btn" data-project="Community Learning Hub" data-goal="10000" data-raised="2500">Fund Project <i class="fas fa-graduation-cap"></i></button>  
+            </div>  
+          </article>  
+        </div>  
+      </div>  
+    </section>  
+  
+    <!-- ===== CREATE PROJECT ===== -->  
+    <section id="create" class="create-project" aria-labelledby="create-heading">  
+      <div class="container">  
+        <h2 id="create-heading"><i class="fas fa-pen-fancy"></i> Start Your Project</h2>  
+        <form id="projectForm">  
+          <label for="title"><i class="fas fa-tag"></i> Project Title</label>  
+          <input type="text" id="title" name="title" placeholder="e.g., Solar-Powered Water Purifier" required />  
+  
+          <label for="description"><i class="fas fa-align-left"></i> Description</label>  
+          <textarea id="description" name="description" placeholder="Tell backers about your vision, impact, and timeline..." required></textarea>  
+  
+          <label for="goal"><i class="fas fa-dollar-sign"></i> Funding Goal ($)</label>  
+          <input type="number" id="goal" name="goal" placeholder="Minimum $500" min="500" step="100" required />  
+  
+          <button type="submit" class="btn-primary"><i class="fas fa-sparkles"></i> Create Project</button>  
+        </form>  
+        <div id="formFeedback" style="text-align:center; margin-top:1rem; font-size:0.9rem;"></div>  
+      </div>  
+    </section>  
+  
+    <!-- ===== UPDATES SECTION ===== -->  
+    <section id="updates" class="updates" aria-labelledby="updates-heading">  
+      <div class="container">  
+        <h2 id="updates-heading"><i class="fas fa-bullhorn"></i> Latest Updates</h2>  
+        <div id="updatesContainer">  
+          <article class="update-card">  
+            <h3>🌿 Smart Farming reached 60%</h3>  
+            <p>Thanks to our supporters, we are halfway there! New sensor prototypes ready.</p>  
+          </article>  
+          <article class="update-card">  
+            <h3>🌱 Eco Products launched early-bird rewards</h3>  
+            <p>Our eco-friendly products are now live with special pledge tiers.</p>  
+          </article>  
+          <article class="update-card">  
+            <h3>📖 Community Hub partners with local schools</h3>  
+            <p>New collaboration announced – matching funds available.</p>  
+          </article>  
+        </div>  
+      </div>  
+    </section>  
+  </main>  
+  
+  <!-- ================= FOOTER ================= -->  
+  <footer>  
+    <p><i class="far fa-copyright"></i> 2026 NexusFund. Empowering creators & backers — All dreams deserve fuel.</p>  
+  </footer>  
+  
+  <!-- toast notification -->  
+  <div id="toastMsg" class="toast-message">✨ Action completed</div>  
+  
+ <script src="script.js"></script>
+</body>
+</html
+       
