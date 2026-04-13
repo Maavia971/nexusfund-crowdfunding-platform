@@ -1,10 +1,10 @@
-🌟 NexusFund – Crowdfunding Platform
+ # 🌟 NexusFund – Crowdfunding Platform
 
-A modern, responsive crowdfunding platform built using HTML, CSS, and JavaScript, designed to simulate real-world fundraising experiences with a clean and graceful user interface.
+A modern, responsive crowdfunding platform built using HTML, CSS, and JavaScript, developed as part of a frontend internship task to simulate real-world fundraising experiences with a clean and graceful user interface.
 
 ---
 
-🚀 Overview
+## 🚀 Overview
 
 NexusFund allows users to:
 
@@ -17,21 +17,21 @@ This project focuses on UI/UX excellence, interactive frontend behavior, and cle
 
 ---
 
-✨ Features
+## ✨ Features
 
-🧩 Project Creation
+### 🧩 Project Creation
 
 - Users can create new projects using a form
 - Includes title, description, and funding goal
 - Newly created projects appear instantly on the platform
 
-💰 Funding Simulation
+### 💰 Funding Simulation
 
 - Users can contribute to projects
 - Funding progress updates dynamically
 - Progress bars reflect real-time changes
 
-📊 Project Display
+### 📊 Project Display
 
 - Responsive card-based layout
 - Each project shows:
@@ -40,19 +40,19 @@ This project focuses on UI/UX excellence, interactive frontend behavior, and cle
   - Funding progress
   - Raised amount vs goal
 
-📢 Updates Section
+## 📢 Updates Section
 
 - Displays latest project updates
 - New project creation automatically generates an update
 
-🔔 Interactive Feedback
+## 🔔 Interactive Feedback
 
 - Toast notifications for actions (funding, project creation)
 - Smooth user experience with visual feedback
 
 ---
 
-🎨 UI/UX Highlights
+## 🎨 UI/UX Highlights
 
 - Modern and minimal design
 - Soft shadows and smooth hover effects
@@ -62,7 +62,7 @@ This project focuses on UI/UX excellence, interactive frontend behavior, and cle
 
 ---
 
-♿ Accessibility
+## ♿ Accessibility
 
 - Semantic HTML structure ("header", "main", "section", "article")
 - ARIA labels for improved navigation
@@ -71,7 +71,7 @@ This project focuses on UI/UX excellence, interactive frontend behavior, and cle
 
 ---
 
-⚡ Performance Optimization
+## ⚡ Performance Optimization
 
 - Lazy loading for images
 - Optimized CSS and minimal JavaScript
@@ -79,7 +79,7 @@ This project focuses on UI/UX excellence, interactive frontend behavior, and cle
 
 ---
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 - HTML5
 - CSS3 (Flexbox & Grid)
@@ -87,7 +87,7 @@ This project focuses on UI/UX excellence, interactive frontend behavior, and cle
 
 ---
 
-⚠️ Limitations
+## ⚠️ Limitations
 
 - Data is not persistent (resets on page refresh)
 - No real backend or database
@@ -95,7 +95,7 @@ This project focuses on UI/UX excellence, interactive frontend behavior, and cle
 
 ---
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
 - Integrate API for persistent data storage
 - Add user authentication system
@@ -105,13 +105,13 @@ This project focuses on UI/UX excellence, interactive frontend behavior, and cle
 
 ---
 
-🌐 Live Demo
+## 🌐 Live Demo
 
 «[View Live Project](https://maavia971.github.io/nexusfund-crowdfunding-platform/)»
 
 ---
 
-📂 How to Run Locally
+## 📂 How to Run Locally
 
 1. Download or clone the repository
 2. Open "index.html" in your browser
@@ -119,13 +119,13 @@ This project focuses on UI/UX excellence, interactive frontend behavior, and cle
 
 ---
 
-💡 Inspiration
+## 💡 Inspiration
 
 Inspired by modern crowdfunding platforms focusing on clean design and user experience.
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Maavia Gulshan
 Frontend Developer
